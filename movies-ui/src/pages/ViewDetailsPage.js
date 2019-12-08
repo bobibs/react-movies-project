@@ -90,7 +90,7 @@ class ViewDetailsPage extends Component {
 	render() {
 		return (
 			<div>
-				<div className='container mt-5'>
+				<div className='container mt-4'>
 					<a href='/' className='btn btn-secondary ml-3'>
 						Back To Home
 					</a>
