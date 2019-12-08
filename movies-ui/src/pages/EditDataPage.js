@@ -55,167 +55,168 @@ class EditDataPage extends Component {
 	};
 
 	renderDataEdit = () => {
-		const { from } = this.props.location.state || '/';
-		const { fireRedirect } = this.state;
 		return this.state.dataFilm.map((val, index) => {
 			return (
-				<div className='edit-data-page' key={index}>
-					<h3>Edit Data</h3>
-					<form className='form'>
-						<div className='form-group row'>
-							<label htmlFor='title' className='col-sm-1 col-form-label'>
-								Title
-							</label>
-							<div className='col-sm-7'>
-								<input
-									type='text'
-									ref='title'
-									className='form-control'
-									defaultValue={val.title}
-								/>
-							</div>
+				<form className='form' key={index}>
+					<div className='form-group row'>
+						<label htmlFor='title' className='col-sm-1 col-form-label'>
+							Title
+						</label>
+						<div className='col-sm-7'>
+							<input
+								type='text'
+								ref='title'
+								className='form-control'
+								defaultValue={val.title}
+							/>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='duration' className='col-sm-1 col-form-label'>
-								Duration
-							</label>
-							<div className='col-sm-7'>
-								<input
-									type='text'
-									ref='duration'
-									className='form-control'
-									defaultValue={val.duration}
-								/>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='duration' className='col-sm-1 col-form-label'>
+							Duration
+						</label>
+						<div className='col-sm-7'>
+							<input
+								type='text'
+								ref='duration'
+								className='form-control'
+								defaultValue={val.duration}
+							/>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='cast' className='col-sm-1 col-form-label'>
-								Cast
-							</label>
-							<div className='col-sm-7'>
-								<input
-									type='text'
-									ref='cast'
-									className='form-control'
-									defaultValue={val.cast}
-								/>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='cast' className='col-sm-1 col-form-label'>
+							Cast
+						</label>
+						<div className='col-sm-7'>
+							<input
+								type='text'
+								ref='cast'
+								className='form-control'
+								defaultValue={val.cast}
+							/>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='director' className='col-sm-1 col-form-label'>
-								Director
-							</label>
-							<div className='col-sm-7'>
-								<input
-									type='text'
-									ref='director'
-									className='form-control'
-									defaultValue={val.director}
-								/>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='director' className='col-sm-1 col-form-label'>
+							Director
+						</label>
+						<div className='col-sm-7'>
+							<input
+								type='text'
+								ref='director'
+								className='form-control'
+								defaultValue={val.director}
+							/>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='country' className='col-sm-1 col-form-label'>
-								Country
-							</label>
-							<div className='col-sm-7'>
-								<select
-									ref='country'
-									className='form-control'
-									defaultValue={val.country}>
-									<option selected hidden>
-										Choose One
-									</option>
-									<option value='USA'>USA</option>
-									<option value='Indonesia'>Indonesia</option>
-								</select>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='country' className='col-sm-1 col-form-label'>
+							Country
+						</label>
+						<div className='col-sm-7'>
+							<select
+								ref='country'
+								className='form-control'
+								defaultValue={val.country}>
+								<option selected hidden>
+									Choose One
+								</option>
+								<option value='USA'>USA</option>
+								<option value='Indonesia'>Indonesia</option>
+							</select>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='studio' className='col-sm-1 col-form-label'>
-								Studio
-							</label>
-							<div className='col-sm-7'>
-								<input
-									type='text'
-									ref='studio'
-									className='form-control'
-									defaultValue={val.studio}
-								/>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='studio' className='col-sm-1 col-form-label'>
+							Studio
+						</label>
+						<div className='col-sm-7'>
+							<input
+								type='text'
+								ref='studio'
+								className='form-control'
+								defaultValue={val.studio}
+							/>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='synopsis' className='col-sm-1 col-form-label'>
-								Synopsis
-							</label>
-							<div className='col-sm-7'>
-								<textarea
-									ref='synopsis'
-									cols='20'
-									rows='5'
-									className='form-control'
-									defaultValue={val.synopsis}
-								/>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='synopsis' className='col-sm-1 col-form-label'>
+							Synopsis
+						</label>
+						<div className='col-sm-7'>
+							<textarea
+								ref='synopsis'
+								cols='20'
+								rows='5'
+								className='form-control'
+								defaultValue={val.synopsis}
+							/>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='trailers' className='col-sm-1 col-form-label'>
-								Trailers
-							</label>
-							<div className='col-sm-7'>
-								<input
-									type='text'
-									ref='trailers'
-									className='form-control'
-									defaultValue={val.trailers}
-								/>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='trailers' className='col-sm-1 col-form-label'>
+							Trailers
+						</label>
+						<div className='col-sm-7'>
+							<input
+								type='text'
+								ref='trailers'
+								className='form-control'
+								defaultValue={val.trailers}
+							/>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='status' className='col-sm-1 col-form-label'>
-								Status
-							</label>
-							<div className='col-sm-7'>
-								<select ref='status' className='form-control' defaultValue={val.status}>
-									<option selected hidden>
-										Choose One
-									</option>
-									<option value='Playing Now'>Playing Now</option>
-									<option value='Coming Soon'>Coming Soon</option>
-								</select>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='status' className='col-sm-1 col-form-label'>
+							Status
+						</label>
+						<div className='col-sm-7'>
+							<select ref='status' className='form-control' defaultValue={val.status}>
+								<option selected hidden>
+									Choose One
+								</option>
+								<option value='Playing Now'>Playing Now</option>
+								<option value='Coming Soon'>Coming Soon</option>
+							</select>
 						</div>
-						<div className='form-group row'>
-							<label htmlFor='image' className='col-sm-1 col-form-label'>
-								Image
-							</label>
-							<div className='col-sm-7'>
-								<input
-									type='text'
-									ref='image'
-									className='form-control'
-									defaultValue={val.image}
-								/>
-							</div>
+					</div>
+					<div className='form-group row'>
+						<label htmlFor='image' className='col-sm-1 col-form-label'>
+							Image
+						</label>
+						<div className='col-sm-7'>
+							<input
+								type='text'
+								ref='image'
+								className='form-control'
+								defaultValue={val.image}
+							/>
 						</div>
-						<div className='button-edit-data'>
-							<button
-								className='btn btn-primary'
-								onClick={() => this.editData(val.id)}>
-								Edit Data
-							</button>
-						</div>
-					</form>
-					{fireRedirect && <Redirect to={from || '/manage-admin'} />}
-				</div>
+					</div>
+					<div className='button-edit-data'>
+						<button className='btn btn-primary' onClick={() => this.editData(val.id)}>
+							Edit Data
+						</button>
+					</div>
+				</form>
 			);
 		});
 	};
 
 	render() {
+		const { from } = this.props.location.state || '/';
+		const { fireRedirect } = this.state;
+
 		return (
 			<div>
-				<div className='container'>{this.renderDataEdit()}</div>
+				<div className='container'>
+					<div className='edit-data-page'>
+						<h3>Edit Data</h3>
+						{this.renderDataEdit()}
+						{fireRedirect && <Redirect to={from || '/manage-admin'} />}
+					</div>
+				</div>
 			</div>
 		);
 	}

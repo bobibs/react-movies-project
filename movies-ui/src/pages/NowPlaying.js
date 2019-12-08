@@ -3,6 +3,8 @@ import Axios from 'axios';
 import { API_URL } from '../api/apiUrl';
 import { Link } from 'react-router-dom';
 
+import Carousel from '../components/Carousel';
+
 class NowPlaying extends Component {
 	state = {
 		dataFilm: []
@@ -30,9 +32,9 @@ class NowPlaying extends Component {
 								<p className='m-2'>{val.title}</p>
 							</div>
 							<div className='card-text'>
-								<a href='/' className='btn btn-sm btn-outline-primary'>
+								<Link to='/' className='btn btn-sm btn-outline-primary'>
 									Book Now
-								</a>
+								</Link>
 								<Link
 									to={`/view-details/${val.id}`}
 									className='btn btn-sm btn-outline-warning'>
@@ -49,19 +51,13 @@ class NowPlaying extends Component {
 	render() {
 		return (
 			<div>
-				<div className='section-1'>
-					<img
-						alt='section-1'
-						src='https://liquidchurch.com/wp-content/uploads/2019/08/ATM19-3_toystory4_sunday6.png'
-					/>
-				</div>
-
+				<Carousel />
 				<div className='section-2'>
 					<div className='container'>
 						<div className='label-text'>
-							<a href='/' className='btn btn-secondary'>
+							<Link to='/' className='btn btn-secondary'>
 								Back To Home
-							</a>
+							</Link>
 						</div>
 						<div className='row'>{this.renderNowPlaying()}</div>
 					</div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
 	FaFacebookF,
 	FaTwitter,
@@ -11,18 +12,18 @@ class Footer extends Component {
 		return (
 			<div className='footer'>
 				<div className='footer-icon'>
-					<a href='/' className='facebook'>
+					<Link to='/' className='facebook'>
 						<FaFacebookF />
-					</a>
-					<a href='/' className='instagram'>
+					</Link>
+					<Link to='/' className='instagram'>
 						<FaInstagram />
-					</a>
-					<a href='/' className='twitter'>
+					</Link>
+					<Link to='/' className='twitter'>
 						<FaTwitter />
-					</a>
-					<a href='/' className='email'>
+					</Link>
+					<Link to='/' className='email'>
 						<FaEnvelope />
-					</a>
+					</Link>
 				</div>
 				<div className='footer-text'>
 					<p>&copy; 2019 - Bobi Basari / JC 11 Web & Mobile Development</p>

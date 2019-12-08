@@ -3,6 +3,8 @@ import Axios from 'axios';
 import { API_URL } from '../api/apiUrl';
 import { Link } from 'react-router-dom';
 
+import Carousel from '../components/Carousel';
+
 class UpcomingFilm extends Component {
 	state = {
 		dataFilm: []
@@ -46,19 +48,13 @@ class UpcomingFilm extends Component {
 	render() {
 		return (
 			<div>
-				<div className='section-1'>
-					<img
-						alt='section1'
-						src='https://wallpapertag.com/wallpaper/full/c/0/7/147096-most-popular-finding-dory-wallpaper-1920x1080-hd.jpg'
-					/>
-				</div>
-
+				<Carousel />
 				<div className='section-3'>
 					<div className='container'>
 						<div className='label-text'>
-							<a href='/' className='btn btn-secondary'>
+							<Link hto='/' className='btn btn-secondary'>
 								Back To Home
-							</a>
+							</Link>
 						</div>
 						<div className='row'>{this.renderUpcomingMovies()}</div>
 					</div>

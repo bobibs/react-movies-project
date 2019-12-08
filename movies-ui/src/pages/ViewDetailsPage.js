@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
 import { API_URL } from '../api/apiUrl';
+import { Link } from 'react-router-dom';
 
 class ViewDetailsPage extends Component {
 	state = {
@@ -91,9 +92,9 @@ class ViewDetailsPage extends Component {
 		return (
 			<div>
 				<div className='container mt-4'>
-					<a href='/' className='btn btn-secondary ml-3'>
+					<Link to='/' className='btn btn-secondary ml-3'>
 						Back To Home
-					</a>
+					</Link>
 					{this.renderMovieDescriptions()}
 				</div>
 			</div>
