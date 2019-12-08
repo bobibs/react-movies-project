@@ -17,28 +17,8 @@
         "https://www.youtube.com/embed/wmiIUN-7qhE",
         "https://www.youtube.com/embed/1nVRj7Jr0G0"
       ],
-      "status": "Coming Soon",
-      "id": 1
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1470688221955-X5LCNYJ18HE0EMUXGATC/ke17ZwdGBToddI8pDm48kEh2IkoIX-7Nrg99KLr9_TxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzYNjbIC2UNcWMFHd0nYDO0IPXOotuKmsvnXaDTgQHxbwTu5XWE3JqbA4Qz2mqOFSc/dory.jpg?format=200w",
-      "title": "Finding Dory ",
-      "duration": "97",
-      "cast": [
-        "Ellen DeGeneres",
-        "Albert Brooks",
-        "Edd O'Neill"
-      ],
-      "director": "Andrew Stanton",
-      "country": "USA",
-      "studio": "Pixar Animation",
-      "synopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque obcaecati architecto iure. Iure est soluta inventore perspiciatis quaerat quisquam sed dignissimos ex illum et id, atque voluptas, libero hic earum voluptate a esse tenetur cumque! Earum voluptates, culpa repellendus in quam qui hic porro facere perspiciatis, omnis illo adipisci, delectus ipsa cum aliquam blanditiis? Molestias optio saepe in beatae, perferendis suscipit, quibusdam iste voluptatibus officiis tempore neque deserunt voluptates iure accusamus placeat asperiores quis possimus consectetur eum aperiam illum dolore totam! Sit dolorem sint optio libero, quis nostrum pariatur eaque ut unde nisi consequuntur sed sapiente odit. Vel, deserunt.",
-      "trailers": [
-        "https://www.youtube.com/embed/0tkLUap7oGQ",
-        "https://www.youtube.com/embed/wQOGEZDxPkQ"
-      ],
       "status": "Playing Now",
-      "id": 2
+      "id": 1
     },
     {
       "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1520447607721-OKIOWUX7XXGYYA36NUEV/ke17ZwdGBToddI8pDm48kIVJSNG9hnwNuZIOHRJ2mugUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8GRo6ASst2s6pLvNAu_PZdIs88duGTpngXkexMpRBF8z6T9RkZTstsDkJL3_tLO-BVzYLO8PXy8eLrmDmgVS8b8/i2_tease.png?format=200w",
@@ -59,6 +39,26 @@
       ],
       "status": "Coming Soon",
       "id": 3
+    },
+    {
+      "image": "https://images.squarespace-cdn.com/content/v1/51cdafc4e4b09eb676a64e68/1470687895719-PHTR43KVL0GJO5WTBSQL/ke17ZwdGBToddI8pDm48kIVJSNG9hnwNuZIOHRJ2mugUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8GRo6ASst2s6pLvNAu_PZdJocnQIIinSH3gKMVYBO3O6NKVxQXU2RncqpSrZgjy6vVmcasS0p5xVGVOciIVNIYc/16_dino.jpg?format=200w",
+      "title": "The Good Dinosauru",
+      "duration": "93",
+      "cast": [
+        "Jeffrey Wright",
+        " Frances McDormand",
+        " Maleah "
+      ],
+      "director": "Peter Sohn",
+      "country": "USA",
+      "studio": "Pixar Animation",
+      "synopsis": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque obcaecati architecto iure. Iure est soluta inventore perspiciatis quaerat quisquam sed dignissimos ex illum et id, atque voluptas, libero hic earum voluptate a esse tenetur cumque! Earum voluptates, culpa repellendus in quam qui hic porro facere perspiciatis, omnis illo adipisci, delectus ipsa cum aliquam blanditiis? Molestias optio saepe in beatae, perferendis suscipit, quibusdam iste voluptatibus officiis tempore neque deserunt voluptates iure accusamus placeat asperiores quis possimus consectetur eum aperiam illum dolore totam! Sit dolorem sint optio libero, quis nostrum pariatur eaque ut unde nisi consequuntur sed sapiente odit. Vel, deserunt.",
+      "trailers": [
+        "https://www.youtube.com/embed/O-RgquKVTPE",
+        " https://www.youtube.com/embed/hTsf9EL753A"
+      ],
+      "status": "Coming Soon",
+      "id": 4
     }
   ]
 }
