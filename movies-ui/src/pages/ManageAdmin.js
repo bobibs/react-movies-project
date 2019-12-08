@@ -51,7 +51,7 @@ class ManageAdmin extends Component {
 							</div>
 							<div className='movie-cast'>
 								<h5>Cast</h5>
-								<p>{val.cast}</p>
+								<p>{[...val.cast.join(', ')]}</p>
 							</div>
 							<div className='movie-director'>
 								<h5>Director</h5>

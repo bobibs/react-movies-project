@@ -55,11 +55,13 @@ class EditDataPage extends Component {
 	};
 
 	renderDataEdit = () => {
+		const { from } = this.props.location.state || '/';
+		const { fireRedirect } = this.state;
 		return this.state.dataFilm.map((val, index) => {
 			return (
-				<div className='edit-data-page'>
+				<div className='edit-data-page' key={index}>
 					<h3>Edit Data</h3>
-					<form className='form' key={index}>
+					<form className='form'>
 						<div className='form-group row'>
 							<label htmlFor='title' className='col-sm-1 col-form-label'>
 								Title
@@ -204,18 +206,16 @@ class EditDataPage extends Component {
 							</button>
 						</div>
 					</form>
+					{fireRedirect && <Redirect to={from || '/manage-admin'} />}
 				</div>
 			);
 		});
 	};
 
 	render() {
-		const { from } = this.props.location.state || '/manage-admin-/edit-data';
-		const { fireRedirect } = this.state;
 		return (
 			<div>
 				<div className='container'>{this.renderDataEdit()}</div>
-				{fireRedirect && <Redirect to={from || '/manage-admin'} />}
 			</div>
 		);
 	}
