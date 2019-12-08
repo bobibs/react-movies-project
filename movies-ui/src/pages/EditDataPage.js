@@ -50,6 +50,7 @@ class EditDataPage extends Component {
 		Axios.put(`${API_URL}movies/${id}`, data)
 			.then(res => {
 				this.setState({ fireRedirect: true });
+				return false;
 			})
 			.catch(err => console.log(err));
 	};
@@ -195,7 +196,9 @@ class EditDataPage extends Component {
 						</div>
 					</div>
 					<div className='button-edit-data'>
-						<button className='btn btn-primary' onClick={() => this.editData(val.id)}>
+						<button
+							className='btn btn-primary'
+							onClick={e => this.editData(val.id, e)}>
 							Edit Data
 						</button>
 					</div>
